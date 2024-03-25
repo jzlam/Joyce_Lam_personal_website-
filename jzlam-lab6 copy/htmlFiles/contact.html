@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Joyce Lam professional website">
+
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/font-awesome.min.css">
+
+    <script src="../static/jquery-3.7.1.js"></script>
+    <script defer src="../static/script.js " > </script>
+    <script src="https://kit.fontawesome.com/8be0c4eab8.js" crossorigin="anonymous"></script>
+
+    
+    <title>Joyce Lam</title>
+</head>
+
+<body onload=" addYear()">
+    <header>
+        <h1 id=webname> Joyce Lam </h1>
+        <nav id="myTopnav" class="topnav">
+            <a href="index.html">Home</a>
+            <a href="cv.html">CV</a> 
+            <a href="contact.html" class="active">Contact me</a>
+            <a href="fun.html">For fun</a> 
+            <a href="javascript:void(0);" class="icon">
+                <i class="fa fa-bars" onclick="activeNav()"></i>
+            </a>
+        </nav>
+    </header>
+
+    <div>
+        <h2> Contact Me </h2>
+        <p> 
+            <form action="">
+                <label for="UserName">Your name (required): </label>
+                <input type="text" name="UserName" id="UserName" required>     
+                <label for="UserEmail">Your email (required): </label>     
+                <input type="email" name="UserEmail" id="UserEmail" required>     
+                <label for="UserText">Your text (required): </label>     
+
+                <textarea name="UserText" id="UserText" cols="30" rows="10" required></textarea>    
+                <input type="submit" value="Send" onclick="validate()">
+            </form>
+            
+            <p id="ValidateMsg"></p>
+
+            <table border="1"> 
+                <tr> <th>Contact Method</th> <th>Description</th> </tr>
+                <tr> <td>Email</td> <td>jzlam@andrew.cmu.edu</td> </tr>
+                <tr> <td>Phone</td> <td>917-660-1367</td> </tr>
+                <tr> <td>LinkedIn</td> <td></td> </tr>
+            </table>
+        </p>
+    </div>
+
+    <footer> 
+        <p id="copyYear"> Joyce Lam &copy </p>
+    </footer>
+
+</body>
+
+
+</html>
